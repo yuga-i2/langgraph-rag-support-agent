@@ -1,0 +1,29 @@
+# Core orchestration
+# langgraph/pydantic pinned to versions actually installed and tested against
+# in this project's CI-equivalent run (see tests/). torch/transformers/
+# sentence-transformers/faiss-cpu/streamlit/accelerate use minimum-version
+# bounds only, since this sandbox has no network path to huggingface.co to
+# verify exact pins against real model downloads - run `pip freeze > requirements.lock.txt`
+# after your first successful install to capture exact versions for your machine.
+langgraph==1.2.10
+langchain-core>=0.3.0
+
+# Local Hugging Face models
+torch>=2.2.0
+transformers>=4.44.0
+sentence-transformers>=3.0.0
+accelerate>=0.33.0
+
+# Retrieval
+faiss-cpu>=1.8.0
+rank-bm25==0.2.2
+
+# Schema / validation
+pydantic==2.13.4
+
+# CLI / UI / tests
+streamlit>=1.37.0
+pytest==9.1.1
+
+numpy==2.4.4
+matplotlib==3.10.8
