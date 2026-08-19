@@ -1,4 +1,4 @@
-# OrbitDesk Support Agent
+# LangGraph RAG Support Agent
 
 A local-first, graph-orchestrated RAG support agent built for the Tantrabodh AI
 "AI Engineer Internship" assignment. It answers support questions about the
